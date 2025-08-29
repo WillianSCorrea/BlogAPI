@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
 namespace BlogApi.Models;
 public class User 
@@ -14,6 +15,5 @@ public class User
 
     [Required]
     public string PasswordHash { get; set; }
-
 
 }

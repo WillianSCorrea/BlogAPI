@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
+
 using BlogApi.Models;
 namespace BlogApi.Models;
+
 
 public class Post
 {
@@ -17,5 +19,7 @@ public class Post
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
     public int UserId { get; set; }
-    public User  User { get; set; }
+
+    public User User { get; set; }
+
 }
