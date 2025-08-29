@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BlogApi.Services;
 
-public class PostService
+public class PostService 
 {
 	private readonly AppDbContext _context;
 	private readonly IMapper _mapper;
@@ -15,6 +15,7 @@ public class PostService
 	{
 		_context = context;
 		_mapper = mapper;
+		
 	}
 
 	public async Task<List<PostResponseDto>> GetAllPostsAsync()
